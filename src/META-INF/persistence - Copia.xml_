@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence 
+	                    http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="EclipseLinkExemploPU"
+		transaction-type="RESOURCE_LOCAL">
+		<class>entidades.Cliente</class>
+		<class>entidades.Pedido</class>
+
+		<properties>		
+		
+		<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+		<property name="hibernate.connection.url" value="jdbc:postgresql://ec2-54-85-13-135.compute-1.amazonaws.com:5432/d6r6t1773boimf?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory"/>
+        <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect"/>
+        <property name="hibernate.connection.username" value="qkclxhlvzdjjgx"/>
+        <property name="hibernate.connection.password" value="666dc088a500465748472c91d7f7232e3f828613faf9489b9274bdf0637f102f"/>
+		</properties>
+	</persistence-unit>
+</persistence>
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence 
+	                    http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="EclipseLinkExemploPU"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		
+		
+		<class>entidades.Cliente</class>
+		<class>entidades.Pedido</class>
+		
+		<properties>
+	 		<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-85-13-135.compute-1.amazonaws.com:5432/d6r6t1773boimf" />
+			<property name="javax.persistence.jdbc.user" 	value="qkclxhlvzdjjgx" />
+			<property name="javax.persistence.jdbc.password" value="666dc088a500465748472c91d7f7232e3f828613faf9489b9274bdf0637f102f" />
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+			 
+			<property name="eclipselink.jdbc.property.useSSL" value="true" />
+			<property name="eclipselink.jdbc.property.requireSSL" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
