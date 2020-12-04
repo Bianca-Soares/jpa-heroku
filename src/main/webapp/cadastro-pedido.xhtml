@@ -8,6 +8,11 @@
 	<title>Testes JPA+JSF</title>
 </h:head>
 <h:body>
+<h:selectOneListbox value="#{user.favYear1}">
+   	<f:selectItem itemValue="2000" itemLabel="Year1 - 2000" />
+   	<f:selectItem itemValue="2010" itemLabel="Year1 - 2010" />
+   	<f:selectItem itemValue="2020" itemLabel="Year1 - 2020" />
+</h:selectOneListbox>
 	<h1>
 		<p:outputLabel id="titulo" value="#{clienteMB.cliente.id}" />
 	</h1>

@@ -1,4 +1,5 @@
 # Unidade 8 - Padrões de Projeto e JPA
+# Aluna Maria Alice
 Este projeto está configurado para JSF e JPA, seguindo a estrutura de projeto Maven.
 
 Ao baixar (clonar) este projeto, não se esqueça de:
